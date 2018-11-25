@@ -15,3 +15,14 @@ Simple 2D game made with mainly OpenGL and GLFW
 * Result.h Reslt.cpp - responsible for result scene  
 * Figure.h - definition of Figure class, giving OpenGL style drawing  
 * DrawFigure.h - drawer some kind of figure easily (all member functions are static)  
+
+# License
+ * Sounds - [魔王魂](https://maoudamashii.jokersounds.com/)
+ * Fonts - sans-serif  
+ 
+# Library
+ * texture loader - [stb_image.h](https://github.com/nothings/stb)
+ * music loader and player - [irrKlang.h](https://www.ambiera.com/irrklang/)  
+ * graphics - OpenGL  
+ * mathematics libraly - GLM  
+ * windows, contexts and surfaces, receiving input and events - [GLFW](https://www.glfw.org/)
