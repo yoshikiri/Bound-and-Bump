@@ -2,7 +2,7 @@
 Simple 2D game made with mainly OpenGL and GLFW
 
 # How to Play this Game
-  `git clone https://github.com/yoshikiri/Bound-and-Bump`  
+  `git clone https://github.com/yoshikiri/Bound-and-Bump.git`  
   `cd Bound-and-Bump`  
   `mkdir build`  
   `cd build`   
