@@ -49,7 +49,7 @@ int main() {
   stbi_set_flip_vertically_on_load(true);
 
   // shader proramを作成する
-  const GLuint program(loadProgram("vertexshader.vert", "fragmentshader.frag"));
+  const GLuint program(loadProgram("../vertexshader.vert", "../fragmentshader.frag"));
 
   //--------------------------------------------------------------------------//
 
