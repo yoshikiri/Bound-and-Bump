@@ -152,7 +152,7 @@ State *Play::update() {
         makeRandomVelocity();
         makeRandomeSize();
         makeRandomColor();
-        (*soundEngine)->play2D("Music/se_maoudamashii_system40.ogg", GL_FALSE);
+        (*soundEngine)->play2D("../Music/se_maoudamashii_system40.ogg", GL_FALSE);
       }
     }
   }
@@ -168,7 +168,7 @@ State *Play::update() {
       if (ball->collisionBall(*other)) {
         ball->setShouldDie();
         other->setShouldDie();
-        (*soundEngine)->play2D("Music/se_maoudamashii_system42.ogg", GL_FALSE);
+        (*soundEngine)->play2D("../Music/se_maoudamashii_system42.ogg", GL_FALSE);
         break;
       }
     }

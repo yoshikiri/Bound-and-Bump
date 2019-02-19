@@ -42,11 +42,11 @@ const unsigned int NUMBER_INDICES[] = {
 };
 
 const std::string NUMBER_FILENAMES[] = {
-    "Image/Numbers_Result/zero.png",  "Image/Numbers_Result/one.png",
-    "Image/Numbers_Result/two.png",   "Image/Numbers_Result/three.png",
-    "Image/Numbers_Result/four.png",  "Image/Numbers_Result/five.png",
-    "Image/Numbers_Result/six.png",   "Image/Numbers_Result/seven.png",
-    "Image/Numbers_Result/eight.png", "Image/Numbers_Result/nine.png"};
+    "../Image/Numbers_Result/zero.png",  "../Image/Numbers_Result/one.png",
+    "../Image/Numbers_Result/two.png",   "../Image/Numbers_Result/three.png",
+    "../Image/Numbers_Result/four.png",  "../Image/Numbers_Result/five.png",
+    "../Image/Numbers_Result/six.png",   "../Image/Numbers_Result/seven.png",
+    "../Image/Numbers_Result/eight.png", "../Image/Numbers_Result/nine.png"};
 
 // textureを読み込んでtextureIDを返す
 unsigned int loadTexture(std::string filename, bool rgbaFlag = false) {
@@ -89,7 +89,7 @@ Result::Result(GLFWwindow *window, int score)
       score(score), texture_numbers(std::make_unique<unsigned int[]>(10)) {
 
   // load textures
-  texture = loadTexture("Image/result.png", true);
+  texture = loadTexture("../Image/result.png", true);
   for (int i = 0; i < 10; i++) {
     texture_numbers[i] = loadTexture(NUMBER_FILENAMES[i], true);
   }

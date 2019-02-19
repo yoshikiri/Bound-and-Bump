@@ -62,7 +62,7 @@ unsigned int loadTexture(std::string filename, bool rgbaFlag = false) {
 Title::Title(GLFWwindow *window)
     : State(window), background(std::make_unique<Figure>(
                          GL_TRIANGLES, 4, BACKGROUND_VERTICIES, 6, BACKGROUND_INDICES)) {
-  texture = loadTexture("Image/title.png", true);
+  texture = loadTexture("../Image/title.png", true);
 }
 
 Title::~Title() {}
