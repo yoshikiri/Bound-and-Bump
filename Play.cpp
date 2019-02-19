@@ -46,11 +46,11 @@ const unsigned int NUMBER_INDICES[] = {
 };
 
 const std::string NUMBER_FILENAMES[] = {
-    "Image/Numbers/zero.png",  "Image/Numbers/one.png",
-    "Image/Numbers/two.png",   "Image/Numbers/three.png",
-    "Image/Numbers/four.png",  "Image/Numbers/five.png",
-    "Image/Numbers/six.png",   "Image/Numbers/seven.png",
-    "Image/Numbers/eight.png", "Image/Numbers/nine.png"};
+    "../Image/Numbers/zero.png",  "../Image/Numbers/one.png",
+    "../Image/Numbers/two.png",   "../Image/Numbers/three.png",
+    "../Image/Numbers/four.png",  "../Image/Numbers/five.png",
+    "../Image/Numbers/six.png",   "../Image/Numbers/seven.png",
+    "../Image/Numbers/eight.png", "../Image/Numbers/nine.png"};
 
 // textureを読み込んでtextureIDを返す
 unsigned int loadTexture(std::string filename, bool rgbaFlag = false) {
@@ -108,7 +108,7 @@ Play::Play(GLFWwindow *window)
   makeRandomColor();
 
   // texturesのロード
-  texture = loadTexture("Image/background.png", true);
+  texture = loadTexture("../Image/background.png", true);
   for (int i = 0; i < 10; i++) {
     texture_numbers[i] = loadTexture(NUMBER_FILENAMES[i], true);
   }
