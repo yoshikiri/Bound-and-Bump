@@ -2,8 +2,13 @@
 Simple 2D game made with mainly OpenGL and GLFW
 
 # How to Play this Game
-  type this command in the directory which includes **vertexshader.vert**, **fragmentshader.frag**, **Image**, and **Music**  
-  $ ./a.out  
+  `git clone https://github.com/yoshikiri/Bound-and-Bump`  
+  `cd Bound-and-Bump`  
+  `mkdir build`  
+  `cd build`   
+  `cmake ..`   
+  `make`  
+  `./BaB`  
 
 # Info of each Files
 * main.cpp - initialize settings and main loop of this game  
